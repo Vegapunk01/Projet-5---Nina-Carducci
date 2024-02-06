@@ -268,7 +268,6 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 50%;
-		height: auto;
 	}
 	.picture.left::before {
 		width: 100%;
@@ -337,7 +336,6 @@ input[type="submit"] {
 	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
-		width: 100%;
 	}
 	#services .container {
 		align-items: center;
@@ -354,7 +352,6 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
-		height: auto;
 	}
 }
 
