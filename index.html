@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
 	<meta charset="UTF-8">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
@@ -107,7 +107,7 @@
 	</nav>
 </header>
 <main>
-<section class="en-tete">
+<section class="en-tete" role="region">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -147,7 +147,7 @@
 		</button>
 	</div>
 </section>
-<article id="about">
+<article id="about" role="article">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp"
 			 srcset="./assets/images/nina.webp 1920w, ./assets/images/nina-390.webp 1000w, ./assets/images/nina-250.webp 650w"
@@ -162,7 +162,7 @@
 			<strong>C’est ce que je vous propose : saisir ces merveilleux moments</strong> au travers de mon regard, mon approche, ma technique. <strong>Rendre ces moments immortels</strong>, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur <strong>vos photos</strong>.</p>
 	</div>
 </article>
-<section id="gallery">
+<section id="gallery" role="region">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -184,10 +184,10 @@
 			</blockquote>
 	</div>
 </section>
-<section id="services">
+<section id="services" role="region">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<article class="service">
+		<article class="service" role="article">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p><strong>Pour capturer vos moments</strong> les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour <strong>réaliser vos photos</strong></p>
@@ -197,7 +197,7 @@
 				<span>Matériel, déplacement inclus</span>
 			</div>
 		</article>
-		<article class="service">
+		<article class="service" role="article">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p>Vous souhaitez <strong>retoucher vos photos pour un résultat professionnel</strong> ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -207,7 +207,7 @@
 				<span>2 AR par photo</span>
 			</div>
 		</article>
-		<article class="service">
+		<article class="service" role="article">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un <strong>album photo personnalisé</strong></p>
@@ -225,9 +225,9 @@
 			<cite class="quote__author">- Richard Avedon</cite>
 		</blockquote>
 </div>
-<section id="contact">
+<section id="contact" role="region">
 	<div class="container">
-		<fieldset class="form-container">
+		<fieldset class="form-container" role="group">
 			<legend>
 				<h2>Une question ? Une demande de devis ?</h2>
 				N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
@@ -252,7 +252,7 @@
 	</div>
 </section>
 </main>
-<footer>
+<footer role="contentinfo">
 	<a href="">Mentions légales</a>
 </footer>
 </body>
