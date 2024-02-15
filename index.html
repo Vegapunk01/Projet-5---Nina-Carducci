@@ -149,11 +149,11 @@
 </section>
 <article id="about" role="article">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp"
-			 srcset="./assets/images/nina.webp 1920w, ./assets/images/nina-390.webp 1000w, ./assets/images/nina-250.webp 650w"
-			 sizes="(max-width: 1000px) 390px, (max-width: 650px) 250px, 560px"
-			 alt="Nina - Photographe"
-			 loading="lazy">
+		<picture>
+			<source srcset="./assets/images/nina-390.webp 1000w" media="(min-width: 651px) and (max-width: 1000px)">
+			<source srcset="./assets/images/nina-250.webp 650w" media="(max-width: 650px)">
+			<img src="./assets/images/nina.webp" alt="Photographe Nina Carducci" loading="lazy">
+		</picture>
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -251,11 +251,11 @@
 			</form>
 		</fieldset>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp"
-				 srcset="./assets/images/camera.webp 1920w, ./assets/images/camera-290.webp 1000w, ./assets/images/camera-150.webp 650w"
-				 sizes="(max-width: 1000px) 290px, (max-width: 650px) 150px, 420px"
-				 alt="Appareil photo vintage"
-				 loading="lazy">
+			<picture>
+				<source srcset="./assets/images/camera-290.webp 1000w" media="(min-width: 651px) and (max-width: 1000px)">
+				<source srcset="./assets/images/camera-150.webp 650w" media="(max-width: 650px)">
+				<img src="./assets/images/camera.webp" alt="Camera vintage" loading="lazy">
+			</picture>
 		</div>
 	</div>
 </section>
